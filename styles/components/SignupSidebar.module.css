@@ -1,0 +1,42 @@
+.signup_sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 48%;
+  min-width: 28vw;
+  max-width: 640px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  z-index: 2;
+}
+.signup_sidebar_ctatext {
+  color: #b0b1b3;
+  font-family: Inter, sans-serif;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 46.8px */
+  margin: 0 auto;
+  width: 340px;
+  height: 94px;
+}
+.signup_sidebar_descText {
+  display: inline-flex;
+  padding: 18px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  color: var(--grey-900);
+  text-align: center;
+  /* Button Label */
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+  margin-top: 24px;
+}
