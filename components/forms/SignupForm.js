@@ -13,7 +13,7 @@ const SignupForm = (props) => {
         onChange={(e) =>
           setSignupFormData({ ...signupFormData, email: e.target.value })
         }
-        pattern="^(?!\s*$).*[a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+        pattern="^(?!\s*$)[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+$"
         className={styles.signup_sidebar_emailfield}
       />
       <button type="submit" className={styles.signup_sidebar_getstartedButton}>

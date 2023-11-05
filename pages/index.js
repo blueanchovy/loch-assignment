@@ -5,7 +5,7 @@ import useDevice from "../utils/hooks/useDevice";
 import SignupSidebar from "../components/SignupSidebar";
 
 export default function Home() {
-  const { isTabletOrSmaller } = useDevice();
+  const { isTabletOrSmaller, isMobileOrSmaller } = useDevice();
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +16,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.homepage_content}></div>
-        {!isTabletOrSmaller && <SignupSidebar />}
+        {!isMobileOrSmaller && <SignupSidebar />}
       </main>
     </div>
   );
