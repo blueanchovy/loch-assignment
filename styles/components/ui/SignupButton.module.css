@@ -1,0 +1,17 @@
+.signup_button {
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 0 1rem;
+  background: radial-gradient(
+    92.19% 89.74% at 2.27% 91.27%,
+    rgba(31, 169, 17, 0.81) 17.21%,
+    #2f15d0 64.58%,
+    rgb(25, 25, 26, 0.96) 100%
+  );
+  border: 1px solid blue;
+  border-radius: 6px;
+}

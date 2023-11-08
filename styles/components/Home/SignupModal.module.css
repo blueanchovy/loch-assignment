@@ -1,0 +1,21 @@
+.signupModal {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  border: none;
+}
+.signupModal::backdrop {
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.signupModal_close {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  padding: 2px 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}

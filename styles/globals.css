@@ -1,6 +1,11 @@
 :root {
   --grey-900: #19191a;
   --White: #fff;
+  --Background---F2F2F2: #f2f2f2;
+  --grey-800: #313233;
+  --grey-50: rgba(229, 229, 230, 0.5);
+  --neutral-300: #d4d4d4;
+  --blue-blue: #0071e3;
 }
 
 html,

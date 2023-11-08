@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 
-export default function useDevice() {
+export default function useDevice(width) {
   const [isTabletOrSmaller, setIsTabletOrSmaller] = useState(false);
   const [isMobileOrSmaller, setIsMobileOrSmaller] = useState(false);
+  const [isXOrSmaller, setIsXOrSmaller] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -12,6 +13,9 @@ export default function useDevice() {
       setIsMobileOrSmaller(
         window?.matchMedia("(max-width: 767px)")?.matches || false
       );
+      setIsXOrSmaller(
+        window?.matchMedia(`(max-width: ${width}px)`)?.matches || false
+      );
     };
     if (typeof window !== "undefined") {
       setIsTabletOrSmaller(
@@ -20,6 +24,9 @@ export default function useDevice() {
       setIsMobileOrSmaller(
         window?.matchMedia("(max-width: 767px)")?.matches || false
       );
+      setIsXOrSmaller(
+        window?.matchMedia(`(max-width: ${width}px)`)?.matches || false
+      );
 
       window?.addEventListener("resize", handleResize);
 
@@ -27,10 +34,11 @@ export default function useDevice() {
         window?.removeEventListener("resize", handleResize);
       };
     }
-  }, []);
+  }, [width]);
 
   return {
     isTabletOrSmaller,
     isMobileOrSmaller,
+    isXOrSmaller,
   };
 }
