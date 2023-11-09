@@ -5,7 +5,7 @@
   height: 100vh;
   width: 70%;
   /* min-width: 28vw; */
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background: white;
@@ -35,10 +35,10 @@
     width: 50%;
   }
   @media (max-width: 1440px) {
-    width: 46%;
+    width: 46.5%;
   }
   @media (max-width: 1280px) {
-    width: 40%;
+    width: 39%;
   }
   @media (max-width: 1172px) {
     width: 34%;
@@ -60,5 +60,8 @@
   }
   @media (max-width: 780px) {
     width: 46%;
+  }
+  @media (max-width: 767px) {
+    display: none;
   }
 }

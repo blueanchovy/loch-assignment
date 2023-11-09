@@ -5,6 +5,7 @@ import useDevice from "../utils/hooks/useDevice";
 import SignupSidebar from "../components/Home/SignupSidebar";
 import SignupModal from "../components/Home/SignupModal";
 import GetNotified from "../components/Home/GetNotified";
+import WatchWhales from "../components/Home/WatchWhales";
 
 export default function Home() {
   const { isMobileOrSmaller } = useDevice();
@@ -14,13 +15,13 @@ export default function Home() {
       <Head>
         <title>Signup | Loch</title>
         <meta name="title" content="Signup | Loch" />
-        <meta name="description" content="Sign up for exclusive access" />
+        <meta name="description" content="Sign up on Loch" />
         <link rel="icon" href="/Loch.svg" />
       </Head>
       <main className={styles.main}>
         <div className={styles.homepage_content}>
           <GetNotified setSignupModalVisible={setSignupModalVisible} />
-          <section className={styles.watchWhales}></section>
+          <WatchWhales />
           <section className={styles.testimonials}></section>
         </div>
         {!isMobileOrSmaller && <SignupSidebar />}

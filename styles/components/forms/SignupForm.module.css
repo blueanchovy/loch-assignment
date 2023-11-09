@@ -9,6 +9,7 @@
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04),
     0px 4px 10px 0px rgba(0, 0, 0, 0.04);
   margin: 32px auto 0 auto;
+  font-smooth: auto;
   @media (max-width: 1078px) {
     width: 280px;
   }
@@ -23,6 +24,7 @@
 }
 .signup_sidebar_emailfield::placeholder {
   color: #cacbcc;
+  font-smooth: auto;
 }
 .signup_sidebar_getstartedButton {
   display: flex;
@@ -45,6 +47,7 @@
   line-height: 120%;
   cursor: pointer;
   margin: 24px auto 0 auto;
+  font-smooth: auto;
   @media (max-width: 1078px) {
     width: 280px;
   }

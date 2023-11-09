@@ -182,7 +182,6 @@ const GetNotifiedCarousel = () => {
           ))}
         </div>
       </div>
-
       <div className={styles.getNotified_carouselShadowOverlay}></div>
     </>
   );

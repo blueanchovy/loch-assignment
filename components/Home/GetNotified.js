@@ -3,7 +3,7 @@ import React, { useDebugValue } from "react";
 import GetNotifiedCarousel from "./GetNotifiedCarousel";
 import styles from "../../styles/components/Home/GetNotified.module.css";
 import useDevice from "../../utils/hooks/useDevice";
-import SignupButton from "../ui/SignupButton";
+import LochButton from "../ui/LochButton";
 
 const GetNotified = (props) => {
   const { setSignupModalVisible } = props;
@@ -20,7 +20,10 @@ const GetNotified = (props) => {
             className={styles.getNotified_left_bell}
           />
           {isMobileOrSmaller && (
-            <SignupButton setSignupModalVisible={setSignupModalVisible} />
+            <LochButton
+              boolAction={setSignupModalVisible}
+              buttonText="Sign Up"
+            />
           )}
         </div>
         <h4 className={styles.getNotified_left_heading}>

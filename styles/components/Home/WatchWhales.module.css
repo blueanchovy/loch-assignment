@@ -1,0 +1,76 @@
+.watchWhales {
+  margin-top: 72px;
+  display: flex;
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+}
+.watchWhales_left > img {
+  width: 335px;
+  height: 306px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1.5px solid rgba(251, 251, 251);
+  image-rendering: crisp-edges;
+  /* Active Shadow */
+  box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12),
+    0px 8px 22px -6px rgba(24, 39, 75, 0.12);
+  object-fit: cover;
+  margin-right: 38px;
+  @media (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    border: none;
+  }
+}
+.watchWhales_right {
+  display: flex;
+  flex-direction: column;
+  padding: 17px 0;
+  @media (max-width: 767px) {
+    margin: 0 0 2rem 0;
+    width: 305px;
+    align-self: flex-end;
+  }
+}
+.watchWhales_right_icon {
+  display: flex;
+  justify-content: right;
+}
+.watchWhales_right_heading {
+  width: 305px;
+  font-smooth: auto;
+  color: var(--Background---F2F2F2);
+  text-align: right;
+  margin-top: 16px;
+  /* Heading 4 */
+  font-family: Inter, sans-serif;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 37.2px */
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+.watchWhales_right_subheading {
+  opacity: 0.7;
+  color: var(--Background---F2F2F2);
+  text-align: right;
+  margin-top: 16px;
+  font-smooth: auto;
+  /* Body */
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  width: 305px;
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}

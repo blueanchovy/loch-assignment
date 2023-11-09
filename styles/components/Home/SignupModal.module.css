@@ -10,12 +10,12 @@
 }
 .signupModal_close {
   position: absolute;
-  top: 4px;
+  top: 0;
   right: 5px;
   padding: 2px 8px;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
   color: #333;
 }

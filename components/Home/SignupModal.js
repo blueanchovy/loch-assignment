@@ -26,7 +26,7 @@ const SignupModal = (props) => {
   return (
     <dialog ref={dialogRef} className={styles.signupModal}>
       <button onClick={closeDialog} className={styles.signupModal_close}>
-        x
+        &times;
       </button>
       <SignupContent />
     </dialog>
