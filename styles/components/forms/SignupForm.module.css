@@ -26,6 +26,10 @@
   color: #cacbcc;
   font-smooth: auto;
 }
+.signup_sidebar_emailfield:hover {
+  box-shadow: 5px 5px lightgray;
+}
+
 .signup_sidebar_getstartedButton {
   display: flex;
   width: 340px;
