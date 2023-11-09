@@ -3,6 +3,8 @@
     0px 8px 22px -6px rgba(24, 39, 75, 0.12);
 }
 .homepage_content {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 72vw;
   position: relative;
@@ -25,6 +27,10 @@
       rgb(25, 25, 26, 0.96) 100%
     );
   }
+  /* for ipad pro */
+  @media (max-width: 1024px) and (min-width: 1023px) and (min-height: 1365px) {
+    height: 100vh;
+  }
   @media (max-width: 767px) {
     background: radial-gradient(
       92.19% 89.74% at 2.27% 91.27%,
@@ -34,8 +40,4 @@
     );
     padding: 1rem 0;
   }
-}
-.homepage_content {
-  display: flex;
-  flex-direction: column;
 }

@@ -1,14 +1,22 @@
 .watchWhales {
   margin-top: 72px;
   display: flex;
-  @media (max-width: 767px) {
+  justify-content: flex-start;
+  @media (max-width: 1023px) {
     flex-direction: column-reverse;
-    padding: 1rem;
     margin-top: 2rem;
   }
+  @media (max-width: 767px) {
+    padding: 1rem;
+  }
+}
+.watchWhales_left {
+  width: 100%;
+  max-width: 335px;
+  margin-right: 38px;
 }
 .watchWhales_left > img {
-  width: 335px;
+  max-width: 335px;
   height: 306px;
   flex-shrink: 0;
   border-radius: 12px;
@@ -18,7 +26,10 @@
   box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12),
     0px 8px 22px -6px rgba(24, 39, 75, 0.12);
   object-fit: cover;
-  margin-right: 38px;
+
+  /* @media (max-width: 1023px) {
+    max-width: 305px;
+  } */
   @media (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -30,30 +41,37 @@
   display: flex;
   flex-direction: column;
   padding: 17px 0;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     margin: 0 0 2rem 0;
     width: 305px;
-    align-self: flex-end;
+    align-self: flex-start;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }
 .watchWhales_right_icon {
   display: flex;
   justify-content: right;
+  @media (max-width: 1023px) {
+    justify-content: left;
+  }
 }
 .watchWhales_right_heading {
   width: 305px;
   font-smooth: auto;
   color: var(--Background---F2F2F2);
   text-align: right;
-  margin-top: 16px;
+  margin: 16px 0 0 0;
   /* Heading 4 */
   font-family: Inter, sans-serif;
   font-size: 31px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 37.2px */
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     width: 100%;
+    text-align: left;
   }
 }
 .watchWhales_right_subheading {
@@ -69,7 +87,8 @@
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   width: 305px;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
+    text-align: left;
     width: 100%;
     margin-top: 1.5rem;
   }

@@ -51,12 +51,13 @@
   border-radius: 8.4px;
   z-index: 1;
   @media (max-width: 1023px) {
-    height: 100%;
+    height: 96.7%;
   }
   @media (max-width: 767px) {
     width: 380px;
     border-radius: 8px;
     top: 0;
+    height: 100%;
   }
 }
 .carouselContent_card {
@@ -78,6 +79,7 @@
 .carouselContent_card_top {
   display: flex;
   justify-content: space-between;
+  font-smooth: auto;
 }
 .carouselContent_1_mid {
   color: var(--grey-900);
@@ -87,6 +89,7 @@
   font-weight: 500;
   line-height: 120%; /* 16.8px */
   margin-top: 14px;
+  font-smooth: auto;
 }
 .carouselContent_1_save {
   color: var(--grey-900);
@@ -107,6 +110,7 @@
   width: 100%;
   height: 35px;
   margin-top: 15.5px;
+  font-smooth: auto;
 }
 .carouselContent_1_checkbox {
   display: flex;
@@ -126,6 +130,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 13.44px */
+  font-smooth: auto;
 }
 .carouselContent_2_bottomAmount {
   display: flex;
@@ -137,6 +142,7 @@
   border-radius: 2.8px;
   background: var(--grey-50);
   margin-top: 14.6px;
+  font-smooth: auto;
 }
 .carouselContent_2_bottomAmountText {
   color: var(--grey-800);
@@ -145,6 +151,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 10.92px */
+  font-smooth: auto;
 }
 .carouselContent_2_bottomAmountIcon {
   width: 11.2px;
@@ -159,6 +166,7 @@
   font-weight: 500;
   line-height: 120%; /* 13.44px */
   width: 114.1px;
+  font-smooth: auto;
 }
 .carouselContent_3_bottom_duration {
   display: flex;
@@ -170,6 +178,7 @@
   border-radius: 2.8px;
   background: var(--grey-50);
   margin-top: 9px;
+  font-smooth: auto;
 }
 .carouselContent_3_bottom_durationText {
   color: var(--grey-800);
@@ -178,6 +187,7 @@
   font-size: 9.1px;
   font-style: normal;
   font-weight: 500;
+  font-smooth: auto;
   line-height: 120%; /* 10.92px */
 }
 .carouselContent_3_bottom_text2 {
@@ -186,6 +196,7 @@
   font-size: 11.2px;
   font-style: normal;
   font-weight: 500;
+  font-smooth: auto;
   line-height: 120%; /* 13.44px */
   width: 107.8px;
   margin-top: 8.4px;

@@ -23,9 +23,9 @@ const WatchWhales = () => {
             className={styles.watchWhales_right_icon_eye}
           />
         </div>
-        <div className={styles.watchWhales_right_heading}>
+        <h4 className={styles.watchWhales_right_heading}>
           Watch what the whales are doing
-        </div>
+        </h4>
         <div className={styles.watchWhales_right_subheading}>
           All whales are not equal. Know exactly what the whales impacting YOUR
           portfolio are doing.

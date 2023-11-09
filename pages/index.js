@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import useDevice from "../utils/hooks/useDevice";
@@ -6,10 +6,12 @@ import SignupSidebar from "../components/Home/SignupSidebar";
 import SignupModal from "../components/Home/SignupModal";
 import GetNotified from "../components/Home/GetNotified";
 import WatchWhales from "../components/Home/WatchWhales";
+import Testimonials from "../components/Home/Testimonials";
 
 export default function Home() {
   const { isMobileOrSmaller } = useDevice();
   const [signupModalVisible, setSignupModalVisible] = useState(true);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -22,7 +24,7 @@ export default function Home() {
         <div className={styles.homepage_content}>
           <GetNotified setSignupModalVisible={setSignupModalVisible} />
           <WatchWhales />
-          <section className={styles.testimonials}></section>
+          <Testimonials />
         </div>
         {!isMobileOrSmaller && <SignupSidebar />}
         {signupModalVisible && isMobileOrSmaller && (
