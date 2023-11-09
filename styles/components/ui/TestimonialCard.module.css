@@ -35,7 +35,7 @@
   line-height: 120%; /* 19.2px */
 }
 .testimonial_card_designation {
-  color: var(--grey-400, #96979a);
+  color: var(--grey-400);
   font-family: Inter, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -47,7 +47,7 @@
   margin-bottom: -5px;
 }
 .testimonial_card_review {
-  color: var(--text-5, #1d2129);
+  color: var(--text-5);
   /* Body */
   font-family: Inter, sans-serif;
   font-size: 16px;

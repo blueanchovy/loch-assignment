@@ -71,7 +71,7 @@
   line-height: 120%; /* 37.2px */
   @media (max-width: 1023px) {
     width: 100%;
-    text-align: left;
+    text-align: left !important;
   }
 }
 .watchWhales_right_subheading {
