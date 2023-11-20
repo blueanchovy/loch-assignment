@@ -1,3 +1,6 @@
+.signup_sidebar_content {
+  max-width: 100%;
+}
 .signup_sidebar_ctatext {
   color: #b0b1b3;
   font-family: Inter, sans-serif;
@@ -25,6 +28,7 @@
     font-size: 39px;
     width: 340px;
     height: 94px;
+    max-width: 100%;
   }
   @media (max-width: 767px) {
     font-size: 24px;
@@ -65,5 +69,6 @@
   }
   @media (max-width: 1023px) {
     margin: 24px auto 0 auto;
+    max-width: 100%;
   }
 }

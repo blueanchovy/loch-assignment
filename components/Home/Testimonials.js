@@ -13,9 +13,8 @@ const Testimonials = () => {
   const handleMouseDown = (e) => {
     isDragging = true;
     initialX = e.clientX;
-    document.body.style.cursor = "grabbing";
+    document.body.style.cursor = "grab";
   };
-
   const handleMouseMove = (e) => {
     if (isDragging) {
       const dx = e.clientX - initialX;
@@ -23,7 +22,6 @@ const Testimonials = () => {
       initialX = e.clientX;
     }
   };
-
   const handleMouseUp = () => {
     isDragging = false;
     document.body.style.cursor = "auto";
@@ -78,12 +76,7 @@ const Testimonials = () => {
       </div>
 
       <hr className={styles.testimonials_heading_underline} />
-      <div
-        className={styles.testimonials_bottom}
-        ref={testimonialsRef}
-        onMouseDown={handleMouseDown}
-        style={{ cursor: isDragging ? "grabbing" : "auto" }}
-      >
+      <div className={styles.testimonials_bottom}>
         <LochIcon
           size={60}
           style={{
@@ -93,8 +86,11 @@ const Testimonials = () => {
             marginRight: "40px;",
           }}
         />
-
-        <div className={styles.testimonials_cards_container}>
+        <div
+          className={styles.testimonials_cards_container}
+          ref={testimonialsRef}
+          onMouseDown={handleMouseDown}
+        >
           {TestimonialData.map((testimonial, index) => {
             const isLast = index === TestimonialData.length - 1;
             return (

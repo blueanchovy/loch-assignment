@@ -9,6 +9,7 @@
   width: 72vw;
   position: relative;
   padding: 3rem;
+  padding-bottom: 5rem;
   background: radial-gradient(
     92.19% 89.74% at 2.27% 91.27%,
     rgba(31, 169, 17, 0.81) 17.21%,
@@ -19,7 +20,7 @@
     width: 84vw;
   }
   @media (max-width: 1024px) {
-    width: 100vw;
+    width: 100%;
     background: radial-gradient(
       92.19% 89.74% at 18.27% 91.27%,
       rgba(31, 169, 17, 0.81) 17.21%,

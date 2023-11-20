@@ -145,25 +145,27 @@ const GetNotifiedCarousel = () => {
       }, 2500);
     };
 
-    const handleMouseEnter = () => {
+    const handleMouseOver = () => {
       clearInterval(scrollInterval);
     };
 
-    const handleMouseLeave = () => {
+    const handleMouseOut = () => {
       startAutoScroll();
     };
 
     if (carousel) {
       startAutoScroll();
-      carousel.addEventListener("mouseenter", handleMouseEnter);
-      carousel.addEventListener("mouseleave", handleMouseLeave);
+
+      carousel.addEventListener("mouseover", handleMouseOver);
+      carousel.addEventListener("mouseout", handleMouseOut);
     }
 
     return () => {
       if (carousel) {
         clearInterval(scrollInterval);
-        carousel.removeEventListener("mouseenter", handleMouseEnter);
-        carousel.removeEventListener("mouseleave", handleMouseLeave);
+
+        carousel.removeEventListener("mouseover", handleMouseOver);
+        carousel.removeEventListener("mouseout", handleMouseOut);
       }
     };
   }, [carouselContent]);

@@ -6,6 +6,9 @@
   border-radius: 8.4px;
   overflow: hidden;
   padding-top: 6px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
   @media (max-width: 767px) {
     overflow: hidden;
     padding-top: 0;
